@@ -1,0 +1,31 @@
+#FA3
+
+import numpy as np
+
+arr = []
+
+#list down their steps for 3 days
+steps = {
+  "Phil": [3500, 5900, 5800],
+  "Lien": [3500, 6740, 4000],
+  "Gelo": [4000, 6000, 5700]
+}
+print(np.steps)
+
+#total for each row
+total_phil = sum(np.steps["Phil"])
+total_lien = sum(np.steps["Lien"])
+total_gelo = sum(np.steps["Gelo"])
+
+print("Total steps for Phil:", total_phil)
+print("Total steps for Lien:", total_lien)
+print("Total steps for Gelo:", total_gelo)
+
+#avg for each row
+avg_phil = np.mean(np.steps["Phil"])
+avg_lien = np.mean(np.steps["Lien"])
+avg_gelo = np.mean(np.steps["Gelo"])
+
+#total sum of all steps
+total_steps = total_phil + total_lien + total_gelo
+print("Our combined total steps:", total_steps)
