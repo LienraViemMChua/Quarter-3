@@ -1,0 +1,53 @@
+#FA5
+
+arr = []
+
+#list down their steps for 3 days
+steps = {
+  "Phil": [3500, 5900, 5800],
+  "Lien": [3500, 6740, 4000],
+  "Gelo": [4000, 6000, 5700]
+}
+print(steps)
+
+#Lien's steps for Monday
+lien = steps["Lien"][0]
+print("Lien's steps for Monday:", lien)
+#Lien's steps for Tuesday
+lien = steps["Lien"][1]
+print("Lien's steps for Tuesday:", lien)
+#Lien's steps for Wednesday
+lien = steps["Lien"][2]
+print("Lien's steps for Wednesday:", lien)
+
+#Phil steps
+phil = steps["Phil"][0]
+print("Phil's steps for Monday:", me)
+#p steps
+phil = steps["Phil"][1]
+print("Phil's steps for Tuesday:", me)
+#p steps
+phil = steps["Phil"][2]
+print("Phil's steps for Wednesday:", me)
+
+#g steps in monday
+gelo = steps["Gelo"][0]
+print("Gelo's steps for Monday:", kris)
+#g steps in tuesday
+gelo = steps["Gelo"][1]
+print("Gelo's steps for Tuesday:", kris)
+#g steps in wednesday
+gelo = steps["Gelo"][2]
+print("Gelo's steps for Wednesday:", kris)
+
+#most active day overall 
+total_monday = steps["Phil"][0] + steps["Lien"][0] + steps["Gelo"][0]
+total_tuesday = steps["Phil"][1] + steps["Lien"][1] + steps["Gelo"][1]
+total_wednesday = steps["Phil"][2] + steps["Lien"][2] + steps["Gelo"][2]
+
+if total_monday > total_tuesday and total_monday > total_wednesday:
+    print("Monday has the highest steps with", total_monday, "steps.")
+elif total_tuesday > total_monday and total_tuesday > total_wednesday:
+    print("Tuesday has the highest steps with", total_tuesday, "steps.")
+else:
+    print("Wednesday has the highest steps with", total_wednesday, "steps.")
