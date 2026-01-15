@@ -1,0 +1,27 @@
+#FA2
+
+arr = []
+
+#list down their steps for 3 days
+steps = {
+  "Phil": [3500, 5900, 5800],
+  "Lien": [3500, 6740, 4000],
+  "Gelo": [4000, 6000, 5700]
+}
+print(steps)
+
+#Lien's steps for Wednesday
+lien = steps["LIEN"][2]
+print("Lien's steps for Wednesday:", lien)
+
+#Phil steps
+phil = steps["Phil"]
+print("Phil's steps for Monday:", phil)
+
+#update phil steps for Monday to 2200
+steps["Phil"][0] = 2200
+print("Updated steps for Monday:", steps["Phil"][0])
+
+#phil updated steps
+steps_updated = steps["Phil"]
+print("Phil's steps for Monday:", phil)
